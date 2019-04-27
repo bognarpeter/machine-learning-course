@@ -1,0 +1,11 @@
+Data should be stored here:
+amazon-review/
+- amazon_review_ID.shuf.lrn.csv
+- amazon_review_ID.shuf.sol.ex.csv
+- amazon_review_ID.shuf.tes.csv
+breast-cancer/
+- breast-cancer-diagnostic.shuf.lrn.csv
+- breast-cancer-diagnostic.shuf.sol.ex.csv
+- breast-cancer-diagnostic.shuf.tes.csv
+crime-mapping.csv
+financial.csv
