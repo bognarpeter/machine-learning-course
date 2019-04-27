@@ -105,3 +105,11 @@ venv.bak/
 
 # MacOS
 .DS_Store
+
+# data
+/data/amazon-review/*.csv
+/data/breast-cancer/*.csv
+/data/*.csv
+
+#intellij
+/.idea/*
