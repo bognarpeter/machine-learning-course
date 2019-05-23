@@ -46,9 +46,10 @@ classifier = Sequential()
 #First Hidden Layer
 classifier.add(Dense(500, activation='relu', kernel_initializer='random_normal', input_dim=10000))
 #Second  Hidden Layer
+classifier.add(Dense(400, activation='relu', kernel_initializer='random_normal'))
 classifier.add(Dense(300, activation='relu', kernel_initializer='random_normal'))
 classifier.add(Dense(150, activation='relu', kernel_initializer='random_normal'))
-
+classifier.add(Dense(75, activation='relu', kernel_initializer='random_normal'))
 #Output Layer
 classifier.add(Dense(50, activation='softmax', kernel_initializer='random_normal'))
 
@@ -56,7 +57,7 @@ classifier.add(Dense(50, activation='softmax', kernel_initializer='random_normal
 classifier.compile(optimizer ='adam',loss='sparse_categorical_crossentropy', metrics =['accuracy'])
 
 #Fitting the data to the training dataset
-classifier.fit(X, y, batch_size=4, epochs=10)
+classifier.fit(X, y, batch_size=2, epochs=15)
 
 ar_test_path = "../../data/amazon-review/amazon_review_ID.shuf.tes.csv"
 ar_test_dataset = pd.read_csv(ar_test_path)
