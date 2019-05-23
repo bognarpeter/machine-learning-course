@@ -114,6 +114,7 @@ venv.bak/
 
 # E2
 /data/E2/*.csv
+/data/E2/*/*.csv
 
 
 #intellij
